@@ -38,22 +38,22 @@ const Footer = () => {
                                 <h4>Useful Links</h4>
                                 <ul>
                                     <li><i> <ArrowRight color="royalblue" size={20} /> </i> <a href="/">Home</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="research">Research</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="Domain">Domains</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="about">About Us</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="contact">Contact Us</a></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/research">Research</a></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/Domain">Domains</a></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/about">About Us</a></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
 
                             <div className="col-lg-2 col-6 pt-3 footer-links">
                                 <h4>Domains</h4>
                                 <ul>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="#">Telecommunication</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="#">Mechanical</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="#">G&C</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="#">Software</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="#">Electrical</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="#">Instrumentation</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Telecommunication</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Mechanical</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">G&C</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Software</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Electrical</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Instrumentation</a></li>
                                 </ul>
                             </div>
 

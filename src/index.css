@@ -29,7 +29,10 @@
 /*--------------------------------------------------------------
 # Navbar Start
 --------------------------------------------------------------*/
-
+.navbar{
+  width:auto;
+  background-color: #090909;
+}
 
 .navbar .navbar-brand1{
   max-height: 44px;
@@ -68,6 +71,7 @@
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   width: 100%;
 }
 
 
@@ -75,21 +79,13 @@
   color:rgb(255 255 255 / 75%);
   padding-bottom: 20px;
   font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .row p{
   color:#78878c;
   padding-bottom: 30px;
 }
-
-
-
-
-
-
-
-
-
 
 
 #card {
@@ -122,53 +118,127 @@ font-weight: 600;
 }
 
 
-.home2{
-  
-  /* background: rgb(2,62,75);
-  background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%); */
-  /* background: rgb(8,86,103);
-background: linear-gradient(27deg, rgb(4, 78, 95) 0%, rgba(1,35,44,1) 74%); */
-
-/* background: rgb(8,86,103);
-background: radial-gradient(circle, rgba(8,86,103,1) 0%, rgba(1,35,44,1) 82%); */
-
-/* background:conic-gradient(from 90deg at 50% 50%, rgba(8, 86, 103, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(130, 238, 188, 1) 100%); */
-
-/* background:radial-gradient(circle at 50% 50%, rgba(45, 170, 176, 1) 0%, rgba(12, 98, 109, 1) 50%, rgba(2, 51, 62, 1) 100%); */
-
-/* background:radial-gradient(circle at 50% 50%, rgba(21, 133, 139, 1) 0%, rgba(4, 73, 82, 1) 50%, rgba(0, 40, 49, 1) 100%); */
+ .home2{
 
 background:radial-gradient(circle at 50% 50%, rgba(12, 94, 99, 1) 0%, rgba(4, 73, 82, 1) 25%, rgba(0, 40, 49, 1) 100%);
 
 }
 
-.home2 .container .row{
-align-items: center;
-  display: flex;
-  justify-content: space-between;
+.background-image {
+  background-image: url('./images/bg-home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 90vh; 
+  position: relative; /* Set the position of the container to relative */
+  
 }
 
-.home2 .vid{
-  width: 60%;
+.overlay {
+  position: absolute; /* Set the position of the overlay to absolute */
+  top: 50%; /* Set the position of the overlay to the middle of the container */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text within the overlay */
+  color: #b14545; /* Set the text color to white */
 }
 
-.home2 .row .vid{
-
-  background-color: rgba(255, 255, 255, 0.03) !important;
-  border-radius: 8px;
-  border: solid 1px #425f6a;
-}
-
-.home3{
+.overlay h3 {
+  font-size: 40px; 
+  margin-bottom: 16rem; /* Add some space between the heading and paragraph */
+  color: #edcb1f;
  
- /* background:radial-gradient(circle at 50% 50%, rgba(12, 94, 99, 1) 0%, rgba(4, 73, 82, 1) 25%, rgba(0, 40, 49, 1) 100%); */
- /* background:radial-gradient(circle at 50% 50%, rgba(2, 69, 78, 1) 0%, rgba(14, 74, 78, 1) 0%, rgba(0, 40, 49, 1) 81%); */
+}
 
- background: rgb(13,59,68);
- background: radial-gradient(circle, rgba(13,59,68,1) 0%, rgba(1,35,44,1) 82%);
+.overlay p {
+  font-size: 1.5rem; /* Set the font size for the paragraph */
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    position: static;
+    transform: none;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .overlay h3 {
+    font-size: 18px;
+
+  }
+  
+ 
+
+  .background-image{
+  max-width: 100%;
+  height: auto;
+
+  }
 }
 
 
+
+
+
+#wrapper { 
+  /* background:radial-gradient(circle at 50% 50%, rgba(12, 94, 99, 1) 0%, rgba(4, 73, 82, 1) 25%, rgba(0, 40, 49, 1) 100%); */
+  height: auto; 
+  margin: 0 auto;
+} 
+
+#home1 { 
+  width: 47.5%; 
+  height: 300px; 
+  float: left; 
+  margin-right: 5%;
+ 
+} 
+
+#home2 { 
+  width: 47.5%; 
+  height: 300px; 
+  align-items:center;
+  margin: auto;  
+  float: left; 
+  color: white;
+  font-size: larger;
+  line-height:30px;
+  padding-left: 4px;
+  padding-right: 2px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#home2 h2{
+  padding-left: 60px;
+    padding-bottom: 28px;
+    padding-top: 20px;
+    color: #12D587;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.clear{
+  clear: both;
+}
+
+@media (max-width:768px) {
+  #wrapper{
+      width: 100%;
+      height: auto;
+  }
+  #home1 {
+      width: 100%;
+      height: auto;
+      float: none;
+  }
+  #home2 {
+      width: 100%;
+      height: auto;
+      float: none;
+  }
+}
 
 
 
@@ -179,71 +249,231 @@ align-items: center;
 /*--------------------------------------------------------------
 # Research Start
 --------------------------------------------------------------*/
-#header {
+@charset "UTF-8";
+/*********** reset **********/
+html,
+body,
+div {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+/* ------------------------------------------------------ */
+
+.res {
   position: relative;
   width: 100%;
-  padding: 100px 0;
-  background:radial-gradient(circle at 50% 50%, rgba(12, 94, 99, 1) 0%, rgba(4, 73, 82, 1) 25%, rgba(0, 40, 49, 1) 100%);
-/* background: rgb(2,62,75);
-background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%); */
-  /* countdown */
+  height: 100vh;
+  overflow: hidden;
 }
 
-#header h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
+/* -----------------------
+animation circle 回る玉 ~4s
+----------------------- */
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
 }
 
-#header h2 {
-  color: #eee;
-  margin-bottom: 40px;
-  font-size: 22px;
+.circle div {
+  position: absolute;
+  top: calc((50% - 10px));
+  left: calc((50% - 10px));
+  width: 20px;
+  height:20px;
+  background: #fff;
+  border-radius: 50%;
 }
 
-#header .countdown {
-  margin-bottom: 80px;
+.circle div:nth-child(1) { animation: anim_01 2s forwards;}
+.circle div:nth-child(2) { animation: move_01 2s 2s; }
+.circle div:nth-child(4) { animation: move_03 2s 2s; }
+.circle div:nth-child(3) { animation: move_02 2s 2s; }
+.circle div:nth-child(5) { animation: move_04 2s 2s; }
+
+@keyframes anim_01 {
+  0% {   transform: scale(0);}
+  20% {  transform: scale(3);}
+  50% {  transform: scale(1);}
+  90% {  transform: scale(5);}
+  100% { transform: scale(0);}
 }
 
-#header .countdown div {
-  text-align: center;
-  margin: 10px;
+@keyframes move_01 {
+  0% {   transform: translate(0) scale(0);}
+  20% {  transform: translate(-100px, -100px) scale(1);}
+  40% {  transform: translate(-100px, 100px) scale(1);}
+  60% {  transform: translate(100px, 100px) scale(1);}
+  80% {  transform: translate(100px, -100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+@keyframes move_02 {
+  0% {   transform: translate(0) scale(0);}
+  20% {  transform: translate(-100px, 100px) scale(1);}
+  40% {  transform: translate(100px, 100px) scale(1);}
+  60% {  transform: translate(100px, -100px) scale(1);}
+  80% {  transform: translate(-100px, -100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+@keyframes move_03 {
+  0% {   transform: translate(0px) scale(0);}
+  20% {  transform: translate(100px, 100px) scale(1);}
+  40% {  transform: translate(100px, -100px) scale(1);}
+  60% {  transform: translate(-100px, -100px) scale(1);}
+  80% {  transform: translate(-100px, 100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+@keyframes move_04 {
+  0% {   transform: translate(0px) scale(0);}
+  20% {  transform: translate(100px, -100px) scale(1);}
+  40% {  transform: translate(-100px, -100px) scale(1);}
+  60% {  transform: translate(-100px, 100px) scale(1);}
+  80% {  transform: translate(100px, 100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+/* -----------------------
+animation big 広がる玉 4s~5.6s
+----------------------- */
+.big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.big div{
+  position: absolute;
+  top: calc((50% - 1500px));
+  left: calc((50% - 1500px));
+  width: 3000px;
+  height: 3000px;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.big div:nth-child(1) { background: #fffcee; animation: big .5s 4s forwards;}
+.big div:nth-child(2) { background: #bd8e99; animation: big .5s 4.5s forwards;}
+.big div:nth-child(3) { background: #9e3f57;  animation: big .5s 5s forwards;}
+
+@keyframes big {
+  0% {  transform: scale(0);}
+  100% {transform: scale(1);}
+}
+
+/* -----------------------
+animation tri 突き上げる三角 ~5.9s
+----------------------- */
+.tri {
+  position: absolute;
+  bottom: -300vw;
+  left: -100vw;
+  width: 0;
+  height: 0;
+  border-left: 150vw solid rgba(255, 0, 0, 0);
+  border-right: 150vw solid rgba(255, 0, 0, 0);
+  border-bottom: 300vw solid  rgb(21, 35, 50);
+  animation: tri .6s 5.3s linear forwards;
+}
+
+@keyframes tri {
+  100% {transform: translateY(-300vw); }
+}
+
+/* -----------------------
+animation squ 現れる四角 7.3s
+----------------------- */
+.squ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.squ div {
+  position: absolute;
+  top: calc((50% - 50px));
+  left: calc((50% - 50px));
   width: 100px;
-  padding: 15px 0;
-  background: rgba(255, 255, 255, 0.12);
-  border-top: 5px solid #ff0000;
+  height:100px;
+  background: #3a6e9a;
+  border-radius: 50%;
+  transform: scale(0);
 }
 
-#header .countdown div h3 {
-  font-weight: 700;
-  font-size: 44px;
-  margin-bottom: 15px;
+.squ div:nth-child(1) { animation: squ .6s 5.8s cubic-bezier(0, 0.73, 0.54, 2.4) forwards;}
+.squ div:nth-child(2) { animation: moveSqu_01 .8s 6.5s forwards;}
+.squ div:nth-child(3) { animation: moveSqu_02 .8s 6.5s forwards;}
+.squ div:nth-child(4) { animation: moveSqu_03 .8s 6.5s forwards;}
+
+@keyframes squ {
+  0% {   transform: translateY(100px) scale(0);}
+  20% {  transform: translateY(100px) scale(1);}
+  99% {  transform: translateY(0) scale(1);}
+  100% { transform: translateY(0) scale(0);}
 }
 
-#header .countdown div h4 {
-  font-size: 16px;
-  font-weight: 600;
+@keyframes moveSqu_01 {
+  0% {   transform: translateX(0);}
+  100% { transform: translateX(-300px); border-radius: 0;}
 }
 
-@media (max-width: 575px) {
-  #header .countdown div {
-    width: 70px;
-    padding: 10px 0;
-    margin: 10px 8px;
-  }
-
-  #header .countdown div h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-
-  #header .countdown div h4 {
-    font-size: 14px;
-    font-weight: 500;
-  }
+@keyframes moveSqu_02 {
+  0% {   transform: translateX(0);}
+  100% { transform: translateX(0px); border-radius: 0;}
 }
+
+@keyframes moveSqu_03 {
+  0% {   transform: translateX(0);}
+  100% { transform: translateX(300px); border-radius: 0;}
+}
+
+/* -----------------------
+animation end  
+----------------------- */
+.end {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.end div {
+  position: absolute;
+  top: calc((50% - 50px));
+  left: calc((50% - 50px));
+  width: 100px;
+  height:100px;
+  font-size: 70px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  opacity: 0;
+  animation: end 1s 7.4s forwards;
+}
+
+.end div:nth-child(1) {
+  transform: translateX(-300px);
+}
+
+.end div:nth-child(3) {
+  transform: translateX(300px);
+}
+
+@keyframes end {
+  100% { opacity: 1;}
+}
+
 /*--------------------------------------------------------------
 # Research End
 --------------------------------------------------------------*/
@@ -252,77 +482,59 @@ background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%); */
 # Domain Start
 --------------------------------------------------------------*/
 
-.domain{
+
+
+
+.box {
   background:radial-gradient(circle at 50% 50%, rgba(12, 94, 99, 1) 0%, rgba(4, 73, 82, 1) 25%, rgba(0, 40, 49, 1) 100%);
+  /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); */
+  /* border-radius: 10px; */
+  padding: 30px;
+  /* max-width: 1000px; */
 }
 
-.blog-section {
-  background:radial-gradient(circle at 50% 50%, rgba(12, 94, 99, 1) 0%, rgba(4, 73, 82, 1) 25%, rgba(0, 40, 49, 1) 100%);
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 20px;
+
+
 }
 
-.section-title {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: whitesmoke;
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgb(45, 44, 46);
+  /* background-image: linear-gradient(to bottom, #051937, #46254a, #7a344a, #9b533d, #a17f38); */
+  background-image: linear-gradient(to bottom, #175451, #064d52, #004652, #003f50, #07374d);
+  /* background-image: linear-gradient(to bottom, #175451, #284537, #2c3627, #29281f, #1d1c1b); */
+  padding: 5% 0;
+   border-radius: 20px;
 }
 
-.post-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+.grid .text {
+  padding: 10px 20px 20px 30px;
+  color: #808285;
+  margin-bottom: 20px;  
 }
 
-.post {
-  width: 30%;
-  /* background-color: #080808; */
-  color: #444444;
-  background-color: rgb(255 255 255 / 4%);
-  padding: 20px;
+
+
+h3{ 
+  color: #000;
   text-align: left;
-  margin-bottom: 40px;
 }
 
-.post-title {
-  justify-content: center;
-  padding-left: 24px;
-  font-size: 24px;
-  margin-bottom: 20px;
-   color: #a2b3b8;
-  /* color: #fff; */
- 
-}
 
-/* .post-date {
-  font-size: 14px;
-  color: gray;
-  margin-bottom: 20px;
-} */
 
-.post-content {
-  font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  /* color: whitesmoke; */
-  color: #a2b3b8;
-}
 
-.read-more {
-  /* display: none; */
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
 
-  display: inline-block;
-  font-size: 14px;
-  padding: 10px 20px;
-  /* background-color: #333;
-  color: #fff; */
-  text-decoration: none;
-  border-radius: 20px;
-}
 /*--------------------------------------------------------------
 # Domain End
 --------------------------------------------------------------*/
@@ -337,6 +549,7 @@ background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%); */
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   width: 100%;
       /* background:  url(../src/images/ab-bg.svg) ; */
       /* height: 100vh;
       width: auto; */     
@@ -372,6 +585,33 @@ background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%); */
    
  }
 
+ @media (max-width: 768px) {
+  
+  #about{
+    width: 100%;
+    height: auto;
+  }
+
+  #about .row{
+    width: 100%;
+    height: auto;
+  }
+
+  #about .content p{
+    font-size:18px;
+    padding-left: 16px;
+  }
+
+  #about .ab-img {
+     width: 100%;
+      height: auto;
+      float: none;
+
+  }
+
+}
+
+
   /*--------------------------------------------------------------
 # About ---------   Team Section
 --------------------------------------------------------------*/
@@ -381,7 +621,7 @@ background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%); */
 background: linear-gradient(27deg, rgba(2,62,75,1) 0%, rgba(1,35,44,1) 7%);
   /* */
   padding: 60px 0;
- 
+ width: 100%;
  
 }
 

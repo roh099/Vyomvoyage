@@ -4,31 +4,33 @@ import logo from "../src/images/logo.png";
 const Domain = () => {
   return (
     <>
-      <section class="domain">
-        <div class="blog-section">
-          <h1 class="section-title pt-4">Domains Details</h1>
-          <div class="post-container">
-            <div class="post">
-              <h2 class="post-title">Mechanical</h2>
-              {/* <p class="post-date">Published on Date 1</p> */}
-              <p class="post-content">
-                The mechanical domain in engineering involves the design,
-                development, and testing of mechanical systems and components.
-                This includes the creation of mechanical parts and structures,
-                as well as the use of various materials and manufacturing
-                processes to produce those parts. The key responsibilities in
-                this domain include analyzing mechanical systems, developing and
-                testing prototypes, and ensuring that mechanical components meet
-                design specifications and performance requirements
-              </p>
-              <a href="#" class="read-more">
-                Read More
-              </a>
-            </div>
-            <div class="post">
-              <h2 class="post-title">Electrical</h2>
-              {/* <p class="post-date">Published on Date 2</p> */}
-              <p class="post-content">
+     
+
+      <div class="box">
+        <div class="container">
+          <main class="grid">
+            <article>
+              <div class="text">
+                <h3>🛠️ Mechanical</h3>
+
+                <p  class="pt-2 ">
+                  The mechanical domain in engineering involves the design,
+                  development, and testing of mechanical systems and components.
+                  This includes the creation of mechanical parts and structures,
+                  as well as the use of various materials and manufacturing
+                  processes to produce those parts. The key responsibilities in
+                  this domain include analyzing mechanical systems, developing
+                  and testing prototypes, and ensuring that mechanical
+                  components meet design specifications and performance
+                  requirements
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="text">
+                <h3>⚡ Electrical</h3>
+                <p class="pt-2">
                 In electrical domain we design the onboard computer and decide
                 which sensors should be used to collect data about the craft or
                 environment around it.Designing the CubeSat's power system,
@@ -37,15 +39,13 @@ const Domain = () => {
                 communication systems, including the antennas, transceivers, and
                 modems.Participating in the testing and verification of the
                 CubeSat, including ground and flight tests.
-              </p>
-              <a href="#" class="read-more">
-                Read More
-              </a>
-            </div>
-            <div class="post">
-              <h2 class="post-title">Instrumentation</h2>
-              {/* <p class="post-date">Published on Date 2</p> */}
-              <p class="post-content">
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="text">
+                <h3>💡 Instrumentation</h3>
+                <p class="pt-2">
                 Our instrumentation domain basically focuses on sensors , i.e
                 what sensors would be appropriate and produce most effective
                 results considering payload, atmosphere and space. After
@@ -54,31 +54,28 @@ const Domain = () => {
                 testing and implementation of all this.deals with the sensors
                 and the members associated with this domain are exposed to the
                 interfacing of different sensors & it's current technology.
-              </p>
-              <a href="#" class="read-more">
-                Read More
-              </a>
-            </div>
-            <div class="post">
-              <h2 class="post-title">Telecommunication</h2>
-              {/* <p class="post-date">Published on Date 2</p> */}
-              <p class="post-content">
-                Our Instrumentation will be mainly focus on three subsystems.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="text">
+                <h3>🛰️ Telecommunication</h3>
+                <p>
+                We will be mainly focus on three subsystems.
                 Namely, Sensors, Payload & Science. Sensor people will be
                 finding appropriate sensors, to collect data from the space
                 environment and how relay it back to earth so we can process and
                 use that data. Payload people will be researching and deciding
                 our aim in LEO so we can contribute to science. it will be
                 an outcome of our mission after a successful launch into LEO.
-              </p>
-              <a href="#" class="read-more">
-                Read More
-              </a>
-            </div>
-            <div class="post">
-              <h2 class="post-title">Software</h2>
-              {/* <p class="post-date">Published on Date 2</p> */}
-              <p class="post-content">
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="text">
+                <h3>💻 Software</h3>
+                <p>
                 Designing and developing software for the CubeSat's on-board
                 computer, which is responsible for controlling various systems
                 such as communications, power, and attitude control.Implementing
@@ -86,15 +83,13 @@ const Domain = () => {
                 communicate with the CubeSat.Documenting software design and
                 implementation to ensure that the code can be easily maintained
                 and modified by future team members
-              </p>
-              <a href="#" class="read-more">
-                Read More
-              </a>
-            </div>
-            <div class="post">
-              <h2 class="post-title">GN&C</h2>
-              {/* <p class="post-date">Published on Date 2</p> */}
-              <p class="post-content">
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="text">
+                <h3>📡 GN&C</h3>
+                <p>
                 The Guidance, Navigation, and Control Subsystem people will be
                 responsible for controlling the position, trajectory, and
                 attitude (i.e., orientation) of the satellite. GN&C will also be
@@ -102,15 +97,14 @@ const Domain = () => {
                 analysis. ADCS’s main motive will be to keep all subsystems on
                 board in operational mode by taking entry as sensor data and
                 output as actuators.it control the balance and minimize the effect of vibration.
-              </p>
-              <a href="#" class="read-more">
-                Read More
-              </a>
-            </div>
-            {/* <!-- Add more posts as needed --> */}
-          </div>
+                </p>
+              </div>
+            </article>
+
+           
+          </main>
         </div>
-      </section>
+      </div>
     </>
   );
 };

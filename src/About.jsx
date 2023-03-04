@@ -71,7 +71,7 @@ const About = () => {
                         <h2>Meet the Team</h2>
                     </header>
 
-                    <div className="row pb-5 gy-4 d-flex justify-content-center">
+                    <div className="row pb-5 gy-4 d-flex justify-content-center ">
                         <div className="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200" id="lead">
                             <div className="member">
                                 <div className="member-img">

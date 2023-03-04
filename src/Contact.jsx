@@ -51,8 +51,8 @@ const Contact = () => {
                   <div className="info-box " id="contact-number">
                     <i className="bi bi-telephone"></i>
                     <h3>Call Us</h3>
-                    <p>+1 6678 254445 41</p>
-                    <p>+91 66347 76564</p>
+                    <p>+91 83559 08284</p>
+                    <p>+91 73046 63225</p>
                   </div>
                 </div>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                   <div className="info-box">
                     <i className="bi bi-envelope"></i>
                     <h3>Email Us</h3>
-                    <p>contact@example.com</p>
+                    <p>vyomvoyage@gmail.com</p>
                   </div>
                 </div>
 
