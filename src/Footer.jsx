@@ -37,23 +37,23 @@ const Footer = () => {
                             <div className="col-lg-2 col-6 pt-3 footer-links" >
                                 <h4>Useful Links</h4>
                                 <ul>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /> </i> <a href="/">Home</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/research">Research</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/Domain">Domains</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/about">About Us</a></li>
-                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <a href="/contact">Contact Us</a></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /> </i> <NavLink to="/">Home</NavLink></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <NavLink to="/research">Research</NavLink></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <NavLink to="/domain">Domains</NavLink></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <NavLink to="/about">About Us</NavLink></li>
+                                    <li><i> <ArrowRight color="royalblue" size={20} /></i> <NavLink to="/contact">Contact Us</NavLink></li>
                                 </ul>
                             </div>
 
                             <div className="col-lg-2 col-6 pt-3 footer-links">
                                 <h4>Domains</h4>
                                 <ul>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Telecommunication</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Mechanical</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">G&C</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Software</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Electrical</a></li>
-                                    <li><i className="bi bi-chevron-right"></i> <a href="/Domain">Instrumentation</a></li>
+                                    <li><i className="bi bi-chevron-right"></i> <NavLink to="/Domain">Telecommunication</NavLink></li>
+                                    <li><i className="bi bi-chevron-right"></i> <NavLink to="/Domain">Mechanical</NavLink></li>
+                                    <li><i className="bi bi-chevron-right"></i> <NavLink to="/Domain">G&C</NavLink></li>
+                                    <li><i className="bi bi-chevron-right"></i> <NavLink to="/Domain">Software</NavLink></li>
+                                    <li><i className="bi bi-chevron-right"></i> <NavLink to="/Domain">Electrical</NavLink></li>
+                                    <li><i className="bi bi-chevron-right"></i> <NavLink to="/Domain">Instrumentation</NavLink></li>
                                 </ul>
                             </div>
 
